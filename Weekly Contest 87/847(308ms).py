@@ -6,7 +6,7 @@ class Solution:
         """
         
         def helper(target, status, i):
-            if status == target:
+            if status == target:#到达终态开始回溯计算路径长度
                 return 0         
             mem[(status,i)] = -1#当前根节点
             best = float("inf")
@@ -15,7 +15,7 @@ class Solution:
                 if (temp,j) in mem:#形成回路
                     if mem[(temp,j)] != -1:#不为当前根节点
                         best = min(best, mem[(temp,j)])
-                else:
+                else:#继续扩展
                     best = min(best, helper(target,temp,j))
             best += 1
             if best != float("inf"):
