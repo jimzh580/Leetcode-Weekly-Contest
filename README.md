@@ -1,4 +1,3 @@
-# Leetcode Weekly Contest
-# note that it is only python code
-# it started from week 83
-# update every week
+# Leetcode Weekly Contest 周赛
+# it started from week 83 从83周开始
+# update every week 每周更新
